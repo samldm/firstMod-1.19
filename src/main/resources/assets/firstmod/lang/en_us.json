@@ -1,6 +1,13 @@
 {
   "item.firstmod.zircon": "Zircon",
   "item.firstmod.raw_zircon": "Raw Zircon",
+  "item.firstmod.eight_ball": "Eight Ball",
+
+  "block.firstmod.zircon_block": "Block of Zircon",
+  "block.firstmod.zircon_ore": "Zircon Ore",
+  "block.firstmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.firstmod.jumpy_block": "Jumpy Block",
+  "block.firstmod.zircon_lamp": "Zircon Lamp",
 
   "itemGroup.firstmod": "First Mod Items"
 }

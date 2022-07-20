@@ -1,6 +1,7 @@
 package net.callmemrsam.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.callmemrsam.firstmod.block.ModBlocks;
 import net.callmemrsam.firstmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,7 @@ public class FirstMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
