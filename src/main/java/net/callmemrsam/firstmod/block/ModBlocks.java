@@ -1,6 +1,7 @@
 package net.callmemrsam.firstmod.block;
 
 import net.callmemrsam.firstmod.FirstMod;
+import net.callmemrsam.firstmod.block.custom.ElevatorBlock;
 import net.callmemrsam.firstmod.block.custom.JumpyBlock;
 import net.callmemrsam.firstmod.block.custom.ZirconLampBlock;
 import net.callmemrsam.firstmod.item.ModCreativeModeTab;
@@ -45,6 +46,9 @@ public class ModBlocks {
             () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)),  ModCreativeModeTab.MOD_TAB);
 
+    public static final RegistryObject<Block> ELEVATOR_BLOCK = registerBlock("elevator_block",
+            () -> new ElevatorBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.MOD_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
